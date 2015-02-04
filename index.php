@@ -36,7 +36,20 @@
 				$str = "reference translate";
 			}
 			testStr2($str);
-			echo "$str";
+			echo "$str<br>";
+
+			//test variable func
+			function foo(){
+				echo "in foo <br>";
+			}
+			function bar($vstr = "arg"){
+				echo "it's in $vstr <br>";
+			}
+			$func = "foo";
+			$func();
+			$func = "bar";
+			$func();
+			$func("string bar");
 
 		 ?>
 
