@@ -18,7 +18,25 @@
 			unset($t);
 			// echo "$t";
 			$t = print "hello World<br>";
-			print $t
+			print $t;
+
+
+
+
+
+			//test value translate and reference translate
+			echo "<br>";
+			$str = "i'm a string";
+			function testStr1($str){
+				$str = "value translate";
+			}
+			testStr1($str);
+			echo "$str<br>";
+			function testStr2(&$str){
+				$str = "reference translate";
+			}
+			testStr2($str);
+			echo "$str";
 
 		 ?>
 
