@@ -49,8 +49,33 @@
 			$func();
 			$func = "bar";
 			$func();
-			$func("string bar");
+			$func("string bar<br>");
 
+			//test function strpos
+
+			echo strpos("hello world!!!", "hello");
+
+			define("TESTSTR", "hello php!!!!<BR>");
+			//大小写敏感
+			echo TESTSTR;
+			// echo teststr; // error
+			
+
+			//test switch
+			function testswitch($strswitch){
+				switch ($strswitch) {
+					case 'one':
+						# code...
+						echo "one<br>";
+						break;
+					
+					default:
+						# code...
+						echo "defaulta <br>";
+						break;
+				}
+			}
+			testswitch("one");
 		 ?>
 
 	</body>
