@@ -76,6 +76,13 @@
 				}
 			}
 			testswitch("one");
+
+			//test foreach
+			$colors = array("red","green","bule","white","black");
+			foreach ($colors as $key => $value) {
+				# code...
+				echo "key : $key    value : $value <br>";
+			}
 		 ?>
 
 	</body>
