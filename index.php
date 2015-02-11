@@ -83,7 +83,23 @@
 				echo "key : $key  ----  value : $value <br>";
 				#test git diff
 			}
-		 ?>
+			asort($colors);
+			foreach ($colors as $key => $value) {
+				echo "key : $key  ----  value : $value <br>";
+				#test git diff
+			}
 
+			// Test globals
+			$x = 30;
+			$y = 65;
+			$GLOBALS['z'] = $GLOBALS['x']+$GLOBALS['y'];
+		 	echo $x;
+		 	echo "<br>";
+		 	echo $GLOBALS['z']."<br>";
+		 	echo $_SERVER['REQUEST_TIME'];
+		 ?>
+		 <form action="login.php" method="post">
+		 	<input type="submit" value="登录">
+		 </form>
 	</body>
 </html>
