@@ -10,6 +10,15 @@
 				$name = test_input(isset($_POST["name"]) ? $_POST["name"] : "");
 				$email = test_input(isset($_POST["email"]) ? $_POST["email"] : "");
 				$website = test_input(isset($_POST["website"]) ? $_POST["website"] :"");
+				if (empty($name)) {
+					$name = "name can's be null";
+				}
+				if (empty($email)) {
+					$name = "email can's be null";
+				}
+				if (empty($website)) {
+					$website = "website can's be null";
+				}
 
 			}
 
@@ -29,7 +38,12 @@
 
 		
 		</form>
-
+		 <?php 
+		 	echo "enter string is :<br>";
+		 	echo "name: $name <br>";
+		 	echo "email: $email <br>";
+		 	echo "website: $website <br>";
+		  ?>
 		
 	</body>
 </html>

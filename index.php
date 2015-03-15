@@ -99,7 +99,8 @@
 		 	echo $_SERVER['REQUEST_TIME'];
 		 ?>
 		 <form action="login.php" method="post">
-		 	<input type="submit" value="登录">
+		 	<input type="submit" value="enter">
 		 </form>
+
 	</body>
 </html>
